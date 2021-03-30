@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+
+:root {
+  --background-color: #ffffff;
+  --primary-color: #0699a6;
+  --secondary-color: #6d6748f2;
+  --font-color: #000000;
+  --header-footer-color: #f5f3f0;
+  --color-toggle: #040404;
+}
+
+html[data-theme="light"] {
+  --background-color: #ffffff;
+  --primary-color: #04838e;
+  --secondary-color: #6d6748f2;
+  --font-color: #000000;
+  --header-footer-color: #f5f3f0;
+  --color-toggle: #040404;
+}
+
+html[data-theme="dark"] {
+  --background-color: #0e1b1d;
+  --primary-color: #0699a6;
+  --secondary-color: #9d8b6c;
+  --font-color: #e6f5f6;
+  --header-footer-color: #010f11;
+  --color-toggle: #ffffff;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1rem;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li,
+a {
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  list-style-type: none;
+}
+
+.container {
+  background-color: var(--header-footer-color);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  height: 100vh;
+}
+
+/* ======================= HEADER===================== */
+
+#btn-toggle {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: 10%;
+  bottom: 95%;
+}
+
+.sun,
+.moon {
+  font-size: 1.5rem;
+  color: var(--color-toggle);
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 4em 0;
+}
+.header-img {
+  position: relative;
+}
+
+.img-one {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-left: 4rem;
+}
+.img-two {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -25px;
+  right: 10px;
+}
+
+.header-content {
+  margin: 2em 0;
+  text-align: center;
+}
+.header-content p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.header-content h1 {
+  font-size: 5.6rem;
+  letter-spacing: -2.17px;
+  font-family: "Playfair Display", serif;
+  line-height: 46px;
+  margin: 2rem 0;
+  font-weight: 900;
+}
+.btn {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 2rem 6rem;
+  text-transform: uppercase;
+  transition: opacity 300ms ease-in-out;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+/* ======================= HEADER===================== */
+
+/* ======================= BIO===================== */
+
+.bio {
+  margin: 2em;
+}
+.bio-content {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.bio-content span {
+  background: var(--primary-color);
+  width: 5.4rem;
+  height: 1rem;
+  display: inline-block;
+  margin-top: 4rem;
+}
+.heading {
+  font-size: 3.2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  line-height: 42px;
+}
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+.paragraph2 {
+  font-size: 1.8rem;
+  line-height: 24px;
+  margin-bottom: 1rem;
+}
+.boxes {
+}
+.paragraph-group {
+  margin: 1rem 0;
+}
+.paragraph-bold-sec {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+/* ======================= BIO===================== */
+
+/* ======================= SKILLSETS===================== */
+
+.skills {
+  margin-bottom: 5rem;
+}
+.paragraph-primary {
+  cursor: pointer;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.paragraph2 span {
+  font-weight: 600;
+}
+.paragraph-margin {
+  margin-bottom: 2rem;
+}
+
+/* ======================= SKILLSETS===================== */
+/* ======================= FOOTER===================== */
+.container3 {
+  background-color: var(--header-footer-color);
+  clip-path: polygon(100% 0, 100% 99%, 0 100%, 0 18%);
+  color: var(--primary-color);
+  font-family: "Playfair Display", serif;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+}
+.footer-heading {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--font-color);
+  line-height: 50px;
+}
+.footer-paragraph {
+  font-size: 2.6rem;
+  line-height: 36px;
+  font-weight: 900;
+}
+.footer-group {
+  margin: 4rem 0;
+}
+.social-media {
+  max-width: 240px;
+  margin: 0 auto;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+/* ======================= FOOTER===================== */
+
+@media only screen and (min-width: 768px) {
+  /* ======================= HEADER===================== */
+
+  .wrapper {
+    max-width: 482px;
+    margin: 0 auto;
+  }
+  .img-one {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 12rem;
+  }
+  .img-two {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -25px;
+    right: 60px;
+  }
+  .header-content p {
+    font-size: 1.8rem;
+  }
+  .header-content h1 {
+    font-size: 8.6rem;
+    line-height: 76px;
+  }
+  /* ======================= HEADER===================== */
+
+  .footer-heading {
+    font-size: 5.6rem;
+  }
+  .footer-paragraph {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  /* ======================= HEADER===================== */
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    height: 80vh;
+  }
+
+  .header-img {
+    flex-basis: 100%;
+  }
+  .img-one {
+    width: 350px;
+    height: 350px;
+  }
+  .img-two {
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    top: 230px;
+    right: -40px;
+  }
+  .header-content {
+    text-align: left;
+    margin-left: 10rem;
+    flex-basis: 100%;
+  }
+  .header-content h1 {
+    font-size: 14.6rem;
+    line-height: 112px;
+  }
+
+  /* ======================= HEADER===================== */
+}
+
+@media only screen and (min-width: 1280px) {
+  /* ======================= HEADER===================== */
+  .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .bio {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: stretch;
+    margin: 4rem 0;
+  }
+  .box1 {
+    flex-basis: 70%;
+    margin-left: 10rem;
+  }
+  .box2 {
+    flex-basis: 30%;
+  }
+
+  .footer-heading {
+    font-size: 6rem;
+  }
+  .footer-paragraph {
+    font-size: 3rem;
+  }
+  /* ======================= HEADER===================== */
+}
