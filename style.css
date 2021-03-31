@@ -8,6 +8,8 @@
   --font-color: #000000;
   --header-footer-color: #f5f3f0;
   --color-toggle: #040404;
+  --font-PT-Sans-Narrow: "PT Sans Narrow", sans-serif;
+  --Font-Playfair-Display: "Playfair Display", serif;
 }
 
 html[data-theme="light"] {
@@ -17,6 +19,8 @@ html[data-theme="light"] {
   --font-color: #000000;
   --header-footer-color: #f5f3f0;
   --color-toggle: #040404;
+  --font-PT-Sans-Narrow: "PT Sans Narrow", sans-serif;
+  --Font-Playfair-Display: "Playfair Display", serif;
 }
 
 html[data-theme="dark"] {
@@ -26,13 +30,15 @@ html[data-theme="dark"] {
   --font-color: #e6f5f6;
   --header-footer-color: #010f11;
   --color-toggle: #ffffff;
+  --font-PT-Sans-Narrow: "PT Sans Narrow", sans-serif;
+  --Font-Playfair-Display: "Playfair Display", serif;
 }
 html {
   font-size: 10px;
 }
 
 body {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: var(--font-PT-Sans-Narrow);
   font-size: 1rem;
   background-color: var(--background-color);
   color: var(--font-color);
@@ -60,7 +66,7 @@ ul {
   list-style-type: none;
 }
 
-.container {
+.header-container {
   background-color: var(--header-footer-color);
   clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   height: 100vh;
@@ -68,7 +74,7 @@ ul {
 
 /* ======================= HEADER===================== */
 
-#btn-toggle {
+.btn-toggle {
   background: none;
   border: none;
   outline: none;
@@ -78,8 +84,8 @@ ul {
   bottom: 95%;
 }
 
-.sun,
-.moon {
+.dark-mode-button,
+.light-mode-button {
   font-size: 1.5rem;
   color: var(--color-toggle);
   display: block;
@@ -103,13 +109,13 @@ ul {
   position: relative;
 }
 
-.img-one {
+.avatar-image {
   width: 160px;
   height: 160px;
   border-radius: 50%;
   margin-left: 4rem;
 }
-.img-two {
+.cover-image {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -132,7 +138,7 @@ ul {
 .header-content h1 {
   font-size: 5.6rem;
   letter-spacing: -2.17px;
-  font-family: "Playfair Display", serif;
+  font-family: var(--Font-Playfair-Display);
   line-height: 46px;
   margin: 2rem 0;
   font-weight: 900;
@@ -174,26 +180,25 @@ ul {
 }
 .heading {
   font-size: 3.2rem;
-  font-family: "Playfair Display", serif;
+  font-family: var(--Font-Playfair-Display);
   font-weight: 900;
   margin-bottom: 2rem;
   line-height: 42px;
 }
-.paragraph {
+.text-details {
   font-size: 1.8rem;
   line-height: 30px;
 }
-.paragraph2 {
+.text-details-secondary {
   font-size: 1.8rem;
   line-height: 24px;
   margin-bottom: 1rem;
 }
-.boxes {
-}
-.paragraph-group {
+
+.text-details-group {
   margin: 1rem 0;
 }
-.paragraph-bold-sec {
+.text-details-bold {
   text-transform: uppercase;
   font-size: 1.8rem;
   line-height: 24px;
@@ -209,25 +214,25 @@ ul {
 .skills {
   margin-bottom: 5rem;
 }
-.paragraph-primary {
+.text-details-primary {
   cursor: pointer;
   color: var(--primary-color);
   font-weight: 600;
 }
-.paragraph2 span {
+.text-details-secondary span {
   font-weight: 600;
 }
-.paragraph-margin {
+.text-details-margin {
   margin-bottom: 2rem;
 }
 
 /* ======================= SKILLSETS===================== */
 /* ======================= FOOTER===================== */
-.container3 {
+.footer-container {
   background-color: var(--header-footer-color);
   clip-path: polygon(100% 0, 100% 99%, 0 100%, 0 18%);
   color: var(--primary-color);
-  font-family: "Playfair Display", serif;
+  font-family: var(--Font-Playfair-Display);
 }
 .footer {
   display: flex;
@@ -242,7 +247,7 @@ ul {
   color: var(--font-color);
   line-height: 50px;
 }
-.footer-paragraph {
+.footer-text-details {
   font-size: 2.6rem;
   line-height: 36px;
   font-weight: 900;
@@ -272,13 +277,13 @@ ul {
     max-width: 482px;
     margin: 0 auto;
   }
-  .img-one {
+  avatar-image-one {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin-left: 12rem;
   }
-  .img-two {
+  .cover-image {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -297,7 +302,7 @@ ul {
   .footer-heading {
     font-size: 5.6rem;
   }
-  .footer-paragraph {
+  .footer-text-details {
     font-size: 3rem;
   }
 }
@@ -316,11 +321,11 @@ ul {
   .header-img {
     flex-basis: 100%;
   }
-  .img-one {
+  .avatar-image {
     width: 350px;
     height: 350px;
   }
-  .img-two {
+  .cover-image {
     position: absolute;
     width: 152px;
     height: 152px;
@@ -365,7 +370,7 @@ ul {
   .footer-heading {
     font-size: 6rem;
   }
-  .footer-paragraph {
+  .footer-text-details {
     font-size: 3rem;
   }
   /* ======================= HEADER===================== */

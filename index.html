@@ -56,9 +56,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="container">
-      <button aria-label="toggle" id="btn-toggle" type="button">
-        <span class="moon d-none"
+    <!-- ------------------------------------------------ HEADER ---------------------------------------------- -->
+    <section class="header-container">
+      <button
+        aria-label="toggle"
+        id="btn-toggle"
+        class="btn-toggle"
+        type="button"
+      >
+        <span class="dark-mode-button d-none"
           ><svg
             width="24"
             height="24"
@@ -74,7 +80,7 @@
             />
           </svg>
         </span>
-        <span class="sun">
+        <span class="light-mode-button">
           <svg
             width="24"
             height="24"
@@ -92,17 +98,18 @@
           </svg>
         </span>
       </button>
+
       <div class="wrapper">
-        <div class="header">
+        <header class="header">
           <div class="header-img">
             <img
               src="./images/Rectangle.webp"
-              class="img-one"
+              class="avatar-image"
               alt="profile-image"
             />
             <img
               src="./images/Combined Shape.webp"
-              class="img-two"
+              class="cover-image"
               alt="profile-image"
             />
           </div>
@@ -111,16 +118,18 @@
             <h1>Matt <br />McDonald</h1>
             <button class="btn">Contact Me</button>
           </div>
-        </div>
+        </header>
       </div>
     </section>
-    <div class="container2">
+    <!-- ------------------------------------------------ HEADER ---------------------------------------------- -->
+    <!-- ------------------------------------------------ BIO ---------------------------------------------- -->
+    <div class="bio-container">
       <div class="wrapper">
         <section class="bio">
           <div class="box1">
             <div class="bio-content">
               <h2 class="heading">About Me</h2>
-              <p class="paragraph">
+              <p class="text-details">
                 Use this area to say something about yourself or describe your
                 goals. Tum dicere exorsus est cur verear, ne ad id omnia referri
                 oporteat, ipsum per se ipsam voluptatem, quia consequuntur magni
@@ -133,13 +142,11 @@
             <div class="bio-content">
               <h2 class="heading">Experience</h2>
               <div class="boxes">
-                <div class="paragraph-group">
-                  <p class="paragraph-bold-sec">
-                    Front-End Developer — Dropbox
-                  </p>
-                  <p class="paragraph2">Mar. 2020 - Present</p>
+                <div class="text-details-group">
+                  <p class="text-details-bold">Front-End Developer — Dropbox</p>
+                  <p class="text-details-secondary">Mar. 2020 - Present</p>
                 </div>
-                <p class="paragraph">
+                <p class="text-details">
                   Describe your responsibilities. Tum dicere exorsus est cur
                   verear, ne ad id omnia referri oporteat, ipsum per se ipsam
                   voluptatem, quia consequuntur magni dolores eos, qui
@@ -149,13 +156,13 @@
                 </p>
               </div>
               <div class="boxes">
-                <div class="paragraph-group">
-                  <p class="paragraph-bold-sec">
+                <div class="text-details-group">
+                  <p class="text-details-bold">
                     Visual Designer — OutboundEngine
                   </p>
-                  <p class="paragraph2">Sept. 2017 - Mar. 2020</p>
+                  <p class="text-details-secondary">Sept. 2017 - Mar. 2020</p>
                 </div>
-                <p class="paragraph">
+                <p class="text-details">
                   Describe your responsibilities. Tum dicere exorsus est cur
                   verear, ne ad id omnia referri oporteat, ipsum per se ipsam
                   voluptatem, quia consequuntur magni dolores eos, qui
@@ -165,11 +172,11 @@
                 </p>
               </div>
               <div class="boxes">
-                <div class="paragraph-group">
-                  <p class="paragraph-bold-sec">Lead Designer — Scrypt, Inc.</p>
-                  <p class="paragraph2">Jun. 2014 - Sept. 2017</p>
+                <div class="text-details-group">
+                  <p class="text-details-bold">Lead Designer — Scrypt, Inc.</p>
+                  <p class="text-details-secondary">Jun. 2014 - Sept. 2017</p>
                 </div>
-                <p class="paragraph">
+                <p class="text-details">
                   Describe your responsibilities. Tum dicere exorsus est cur
                   verear, ne ad id omnia referri oporteat, ipsum per se ipsam
                   voluptatem, quia consequuntur magni dolores eos, qui
@@ -179,11 +186,11 @@
                 </p>
               </div>
               <div class="boxes">
-                <div class="paragraph-group">
-                  <p class="paragraph-bold-sec">UI Designer — Pinger Inc.</p>
-                  <p class="paragraph2">Jun. 2014 - Sept. 2017</p>
+                <div class="text-details-group">
+                  <p class="text-details-bold">UI Designer — Pinger Inc.</p>
+                  <p class="text-details-secondary">Jun. 2014 - Sept. 2017</p>
                 </div>
-                <p class="paragraph">
+                <p class="text-details">
                   Describe your responsibilities. Tum dicere exorsus est cur
                   verear, ne ad id omnia referri oporteat, ipsum per se ipsam
                   voluptatem, quia consequuntur magni dolores eos, qui
@@ -197,68 +204,80 @@
             <div class="bio-content">
               <h2 class="heading">Education</h2>
               <div class="boxes">
-                <div class="paragraph-group">
-                  <p class="paragraph-bold-sec">
+                <div class="text-details-group">
+                  <p class="text-details-bold">
                     BFA in Graphic Design — James Madison University
                   </p>
-                  <p class="paragraph2">Graduated 2014</p>
+                  <p class="text-details-secondary">Graduated 2014</p>
                 </div>
               </div>
               <span></span>
             </div>
           </div>
           <div class="box2">
-            <div class="skillset">
+            <div class="skillset-container">
               <div class="skills">
-                <p class="paragraph-bold-sec">Skillset</p>
-                <p class="paragraph2">Visual Design</p>
-                <p class="paragraph2">Illustration</p>
-                <p class="paragraph2">UX / Prototyping</p>
-                <p class="paragraph2">Video / Motion Graphics</p>
-                <p class="paragraph2">Marketing</p>
-                <p class="paragraph2">Front-End Development</p>
+                <p class="text-details-bold">Skillset</p>
+                <p class="text-details-secondary">Visual Design</p>
+                <p class="text-details-secondary">Illustration</p>
+                <p class="text-details-secondary">UX / Prototyping</p>
+                <p class="text-details-secondary">Video / Motion Graphics</p>
+                <p class="text-details-secondary">Marketing</p>
+                <p class="text-details-secondary">Front-End Development</p>
               </div>
               <div class="skills">
-                <p class="paragraph-bold-sec">Awards</p>
-                <p class="paragraph2">Award 1 — Mar. 2019</p>
-                <p class="paragraph2">Award 2 — Sept. 2015</p>
-                <p class="paragraph2">Award 3 — Feb. 2013</p>
-                <p class="paragraph2">Award 4 — Dec. 2011</p>
-                <p class="paragraph2">Marketing</p>
-                <p class="paragraph2">Award 5 — Jan. 2005</p>
+                <p class="text-details-bold">Awards</p>
+                <p class="text-details-secondary">Award 1 — Mar. 2019</p>
+                <p class="text-details-secondary">Award 2 — Sept. 2015</p>
+                <p class="text-details-secondary">Award 3 — Feb. 2013</p>
+                <p class="text-details-secondary">Award 4 — Dec. 2011</p>
+                <p class="text-details-secondary">Marketing</p>
+                <p class="text-details-secondary">Award 5 — Jan. 2005</p>
               </div>
               <div class="skills">
-                <p class="paragraph-bold-sec">Career Traits</p>
-                <p class="paragraph2 paragraph-margin">
+                <p class="text-details-bold">Career Traits</p>
+                <p class="text-details-secondary text-details-margin">
                   <span>Holistic Designer</span> - Design should be treated as a
                   living organism, guided by the environment it lives in as a
                   whole.
                 </p>
-                <p class="paragraph2 paragraph-margin">
+                <p class="text-details-secondary text-details-margin">
                   <span> User-Focused</span> - I pay close attention to the
                   user’s needs and pain points. I design with empathy. Launch,
                   learn & iterate.
                 </p>
-                <p class="paragraph2 paragraph-margin">
+                <p class="text-details-secondary text-details-margin">
                   <span>Proactive Evolution</span> - Curiosity and a desire to
                   learn constantly broadens my skill set, enabling me to wear
                   many hats at once.
                 </p>
-                <p class="paragraph2 paragraph-margin">
+                <p class="text-details-secondary text-details-margin">
                   <span>Bold, yet practical </span> - I know when to push the
                   boundaries vs. when to embrace simplicity to meet multiple
                   deadlines.
                 </p>
               </div>
               <div class="skills">
-                <p class="paragraph-bold-sec">Recent Works</p>
-                <p class="paragraph2 paragraph-primary">thedonut.co →</p>
-                <p class="paragraph2 paragraph-primary">outboundengine.com →</p>
-                <p class="paragraph2 paragraph-primary">rswalsh.com →</p>
-                <p class="paragraph2 paragraph-primary">frondaustin.com →</p>
-                <p class="paragraph2 paragraph-primary">tipyo.net →</p>
-                <p class="paragraph2 paragraph-primary">codefresh.io →</p>
-                <p class="paragraph2 paragraph-primary">
+                <p class="text-details-bold">Recent Works</p>
+                <p class="text-details-secondary text-details-primary">
+                  thedonut.co →
+                </p>
+                <p class="text-details-secondary text-details-primary">
+                  outboundengine.com →
+                </p>
+                <p class="text-details-secondary text-details-primary">
+                  rswalsh.com →
+                </p>
+                <p class="text-details-secondary text-details-primary">
+                  frondaustin.com →
+                </p>
+                <p class="text-details-secondary text-details-primary">
+                  tipyo.net →
+                </p>
+                <p class="text-details-secondary text-details-primary">
+                  codefresh.io →
+                </p>
+                <p class="text-details-secondary text-details-primary">
                   carsoncreekranch.com →
                 </p>
               </div>
@@ -267,13 +286,14 @@
         </section>
       </div>
     </div>
-    <footer class="container3">
+    <!-- ------------------------------------------------ BIO ---------------------------------------------- -->
+    <footer class="footer-container">
       <div class="footer">
         <div class="footer-content">
           <h2 class="footer-heading">Get in touch!</h2>
           <div class="footer-group">
-            <p class="footer-paragraph">youremail@email.com</p>
-            <p class="footer-paragraph">512.273.1838</p>
+            <p class="footer-text-details">youremail@email.com</p>
+            <p class="footer-text-details">512.273.1838</p>
           </div>
           <div class="social-media">
             <ul class="list">
