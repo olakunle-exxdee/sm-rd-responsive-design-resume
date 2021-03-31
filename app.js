@@ -19,9 +19,9 @@ const storedTheme = getStoredTheme();
 if (storedTheme)
   document.documentElement.setAttribute("data-theme", storedTheme);
 
-toggle.addEventListener("click", addingClasses);
+toggle.addEventListener("click", toggleCurrentTheme);
 
-function addingClasses() {
+function toggleCurrentTheme() {
   var currentTheme = document.documentElement.getAttribute("data-theme");
   let targetTheme = "light";
 
