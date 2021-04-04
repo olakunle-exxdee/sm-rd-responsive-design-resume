@@ -1,6 +1,9 @@
+// selecting all buttons and svg
 const toggle = document.getElementById("btn-toggle");
 const lightModeBtn = document.querySelector(".light-mode-button");
 const darkModeBtn = document.querySelector(".dark-mode-button");
+
+// function to get store theme preferences on a user computer
 
 const getStoredTheme = () => {
   const storedTheme = localStorage.getItem("theme");
@@ -21,6 +24,7 @@ if (storedTheme)
 
 toggle.addEventListener("click", toggleCurrentTheme);
 
+// function to toggle from ligth to dark or vice vera
 function toggleCurrentTheme() {
   var currentTheme = document.documentElement.getAttribute("data-theme");
   let targetTheme = "light";
