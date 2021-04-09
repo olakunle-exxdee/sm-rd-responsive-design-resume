@@ -57,7 +57,33 @@
   </head>
   <body>
     <!-- ------------------------------------------------ HEADER ---------------------------------------------- -->
+
     <section class="header-container">
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <div class="form">
+          <div class="form-content">
+            <h4>Send a message</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+              sapiente. Nuleos rem!
+            </p>
+          </div>
+          <div class="form-input">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="form-textarea">
+            <textarea placeholder="Message"></textarea>
+          </div>
+          <div class="form-btn">
+            <a href="#">Send Message</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay hidden"></div>
+
       <button
         aria-label="toggle"
         id="btn-toggle"

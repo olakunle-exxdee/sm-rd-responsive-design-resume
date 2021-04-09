@@ -2,7 +2,10 @@
 const toggle = document.getElementById("btn-toggle");
 const lightModeBtn = document.querySelector(".light-mode-button");
 const darkModeBtn = document.querySelector(".dark-mode-button");
-
+const btn = document.querySelector(".btn");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const closeModalBtn = document.querySelector(".close-modal");
 // function to get store theme preferences on a user computer
 
 const getStoredTheme = () => {
@@ -41,3 +44,13 @@ function toggleCurrentTheme() {
   document.documentElement.setAttribute("data-theme", targetTheme);
   localStorage.setItem("theme", targetTheme);
 }
+
+btn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+});
+
+closeModalBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+});
